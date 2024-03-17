@@ -1,0 +1,222 @@
+Group : vending_test_pkg::scoreboard::fcov1
+
+===============================================================================
+Group : vending_test_pkg::scoreboard::fcov1
+===============================================================================
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING 
+ 88.89  88.89    1      100    1        1            64           64            
+
+
+Source File(s) : 
+
+/home1/BRN40/EMSaji/VLSI_RN/UVM_LABS/vending_machine/sim/../tb/scoreboard.sv
+
+1 Instances:
+
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING NAME             
+ 88.89 1      100    1        64           64            top.me.obj.fcov1 
+
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   vending_test_pkg::scoreboard::fcov1
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 5        0         5       100.00  
+Crosses   6        2         4       66.67   
+
+
+Variables for Group  vending_test_pkg::scoreboard::fcov1
+
+
+VARIABLE EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+RESET    2        0         2       100.00  100  1      1        0                    
+COIN_IN  3        0         3       100.00  100  1      1        0                    
+
+
+Crosses for Group  vending_test_pkg::scoreboard::fcov1
+
+
+CROSS           EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+RESET_X_COIN_IN 6        2         4       66.67   100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable RESET
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for RESET
+
+
+Bins
+
+NAME COUNT AT LEAST 
+rst0 8     1        
+rst1 2     1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable COIN_IN
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 3        0         3       100.00  
+
+
+User Defined Bins for COIN_IN
+
+
+Bins
+
+NAME COUNT AT LEAST 
+high 2     1        
+mid  3     1        
+low  3     1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross RESET_X_COIN_IN
+
+
+Samples crossed: RESET COIN_IN
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 6        2         4       66.67   2       
+
+
+Automatically Generated Cross Bins for RESET_X_COIN_IN
+
+
+Uncovered bins
+
+RESET  COIN_IN      COUNT AT LEAST NUMBER 
+[rst1] [high , mid] --    --       2      
+
+
+Covered bins
+
+RESET COIN_IN COUNT AT LEAST 
+rst0  low     2     1        
+rst0  mid     3     1        
+rst0  high    2     1        
+rst1  low     1     1        
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Group Instance : top.me.obj.fcov1
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+ 88.89 1      100    1        64           64            
+
+
+Group:
+
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING COMMENT NAME                                
+ 88.89  88.89    1      100    1        1            64           64                    vending_test_pkg::scoreboard::fcov1 
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group Instance   top.me.obj.fcov1
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 5        0         5       100.00  
+Crosses   6        2         4       66.67   
+
+
+Variables for Group Instance  top.me.obj.fcov1
+
+
+VARIABLE EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+RESET    2        0         2       100.00  100  1      1        0                    
+COIN_IN  3        0         3       100.00  100  1      1        0                    
+
+
+Crosses for Group Instance  top.me.obj.fcov1
+
+
+CROSS           EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+RESET_X_COIN_IN 6        2         4       66.67   100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable RESET
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for RESET
+
+
+Bins
+
+NAME COUNT AT LEAST 
+rst0 8     1        
+rst1 2     1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable COIN_IN
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 3        0         3       100.00  
+
+
+User Defined Bins for COIN_IN
+
+
+Bins
+
+NAME COUNT AT LEAST 
+high 2     1        
+mid  3     1        
+low  3     1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross RESET_X_COIN_IN
+
+
+Samples crossed: RESET COIN_IN
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 6        2         4       66.67   2       
+
+
+Automatically Generated Cross Bins for RESET_X_COIN_IN
+
+
+Uncovered bins
+
+RESET  COIN_IN      COUNT AT LEAST NUMBER 
+[rst1] [high , mid] --    --       2      
+
+
+Covered bins
+
+RESET COIN_IN COUNT AT LEAST 
+rst0  low     2     1        
+rst0  mid     3     1        
+rst0  high    2     1        
+rst1  low     1     1        
+
+

@@ -1,0 +1,9 @@
+{"vcs1":{"timestamp_begin":1710217974.060103231, "rt":10.10, "ut":10.38, "st":0.29}}
+{"vcselab":{"timestamp_begin":1710217984.215336461, "rt":0.28, "ut":0.21, "st":0.05}}
+{"link":{"timestamp_begin":1710217984.545249843, "rt":0.72, "ut":0.57, "st":0.17}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1710217973.577202401}
+{"VCS_COMP_START_TIME": 1710217973.577202401}
+{"VCS_COMP_END_TIME": 1710217985.412211268}
+{"VCS_USER_OPTIONS": "-l vcs.log -timescale=1ns/1ps -sverilog -ntb_opts uvm -debug_access+all -full64 -kdb -lca -P /home/cad/eda/SYNOPSYS/VERDI_2022/verdi/T-2022.06-SP1/share/PLI/VCS/LINUX64/novas.tab /home/cad/eda/SYNOPSYS/VERDI_2022/verdi/T-2022.06-SP1/share/PLI/VCS/LINUX64/pli.a ../rtl/vending_if.sv ../rtl/vending.v +incdir+../tb +incdir+../test +incdir+../sr_agt_top +incdir+../dn_agt_top ../test/vending_test_pkg.sv ../tb/top.sv"}
+{"vcs1": {"peak_mem": 2225577}}
+{"stitch_vcselab": {"peak_mem": 2226046}}

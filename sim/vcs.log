@@ -1,0 +1,1111 @@
+Command: vcs -l vcs.log -timescale=1ns/1ps -sverilog -ntb_opts uvm -debug_access+all \
+-full64 -kdb -lca -P /home/cad/eda/SYNOPSYS/VERDI_2022/verdi/T-2022.06-SP1/share/PLI/VCS/LINUX64/novas.tab \
+/home/cad/eda/SYNOPSYS/VERDI_2022/verdi/T-2022.06-SP1/share/PLI/VCS/LINUX64/pli.a \
+../rtl/vending_if.sv ../rtl/vending.v +incdir+../tb +incdir+../test +incdir+../sr_agt_top \
++incdir+../dn_agt_top ../test/vending_test_pkg.sv ../tb/top.sv
+                         Chronologic VCS (TM)
+       Version T-2022.06-SP1_Full64 -- Tue Mar 12 10:02:54 2024
+
+                    Copyright (c) 1991 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+
+Warning-[LCA_FEATURES_ENABLED] Usage warning
+  LCA features enabled by '-lca' argument on the command line.  For more 
+  information regarding list of LCA features please refer to Chapter "LCA 
+  features" in the VCS Release Notes
+
+Parsing design file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_pkg.sv'
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_macros.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/macros/uvm_version_defines.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_macros.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/macros/snps_macros.svp'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_macros.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/macros/uvm_message_defines.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_macros.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/macros/uvm_phase_defines.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_macros.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/macros/uvm_object_defines.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_macros.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/macros/uvm_printer_defines.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_macros.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/macros/uvm_tlm_defines.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm_imps.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/macros/uvm_tlm_defines.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_macros.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/macros/uvm_sequence_defines.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_macros.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/macros/uvm_callback_defines.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_macros.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/macros/uvm_reg_defines.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_macros.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/macros/uvm_deprecated_defines.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_macros.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_pkg.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/directc/uvm_directc.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/directc/uvm_seed.vh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/directc/uvm_directc.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_pkg.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/dpi/uvm_dpi.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/dpi/uvm_hdl.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/dpi/uvm_dpi.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/dpi/uvm_svcmd_dpi.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/dpi/uvm_dpi.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/dpi/uvm_regex.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/dpi/uvm_dpi.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_pkg.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_version.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_object_globals.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_misc.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_object.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_pool.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_queue.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_factory.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_registry.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_spell_chkr.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_resource.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/deprecated/uvm_resource_converter.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_resource_specializations.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_resource_db.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_config_db.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_printer.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_comparer.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_packer.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_recorder.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_event_callback.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_event.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_barrier.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_callback.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_macros.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_callback.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_report_catcher.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_report_server.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_report_handler.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_report_object.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_transaction.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_phase.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_domain.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_bottomup_phase.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_topdown_phase.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_task_phase.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_common_phases.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_runtime_phases.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_component.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_root.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_component.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_objection.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_heartbeat.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_globals.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_cmdline_processor.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_pkg.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm_ifs.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_sqr_ifs.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_port_base.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm_imps.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_imps.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_ports.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_exports.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_analysis_port.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm_fifo_base.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm_fifos.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm_req_rsp.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_sqr_connections.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_pkg.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_pair.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_policies.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_in_order_comparator.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_algorithmic_comparator.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_random_stimulus.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_subscriber.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_monitor.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_driver.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_push_driver.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_scoreboard.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_agent.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_env.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_test.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_comps.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_pkg.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_seq.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_sequence_item.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_seq.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_sequencer_base.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_seq.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_sequencer_analysis_fifo.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_seq.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_sequencer_param_base.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_seq.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_sequencer.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_seq.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_push_sequencer.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_seq.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_sequence_base.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_seq.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_sequence.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_seq.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_sequence_library.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_seq.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_sequence_builtin.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_seq.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_pkg.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2_defines.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2_time.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2_generic_payload.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2_ifs.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2_imps.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2_ports.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2_exports.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2_sockets_base.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2_sockets.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_pkg.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_item.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_adapter.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_predictor.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_sequence.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_cbs.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_backdoor.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_field.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_vreg_field.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_indirect.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_fifo.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_file.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_mem_mam.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_vreg.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_mem.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_map.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_block.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/sequences/uvm_reg_hw_reset_seq.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/sequences/uvm_reg_bit_bash_seq.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/sequences/uvm_mem_walk_seq.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/sequences/uvm_mem_access_seq.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/sequences/uvm_reg_access_seq.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/sequences/uvm_reg_mem_shared_access_seq.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/sequences/uvm_reg_mem_built_in_seq.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/sequences/uvm_reg_mem_hdl_paths_seq.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/snps_uvm_reg_bank.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_pkg.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/vcs/vcs_uvm_alt.sv'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_pkg.sv'.
+Parsing design file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/vcs/uvm_custom_install_vcs_recorder.sv'
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/vcs/msglog.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/vcs/uvm_custom_install_vcs_recorder.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/vcs/uvm_msglog_report_server.sv'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/vcs/uvm_custom_install_vcs_recorder.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/vcs/uvm_vcs_recorder.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/vcs/uvm_custom_install_vcs_recorder.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/vcs/uvm_vcs_record_interface.sv'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/vcs/uvm_custom_install_vcs_recorder.sv'.
+Parsing design file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_custom_install_verdi_recorder.sv'
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_macros.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_verdi_recorder.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_verdi_pli_base.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_verdi_recorder.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_verdi_reg_map_recording.sv'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_verdi_message_catcher.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_verdi_pli_base.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_verdi_message_catcher.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/./dpi/uvm_verdi_dpi.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_verdi_reg_recording.sv'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VERDI_2022/verdi/T-2022.06-SP1/share/PLI/VCS/include/verdi_trans_recorder_dpi.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_verdi_pli.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing design file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_custom_install_verdi_recorder.sv'
+Parsing design file '../rtl/vending_if.sv'
+Parsing design file '../rtl/vending.v'
+Parsing design file '../test/vending_test_pkg.sv'
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_macros.svh'.
+Back to file '../test/vending_test_pkg.sv'.
+Parsing included file '../sr_agt_top/sr_xtn.sv'.
+Back to file '../test/vending_test_pkg.sv'.
+Parsing included file '../tb/env_config.sv'.
+Back to file '../test/vending_test_pkg.sv'.
+Parsing included file '../sr_agt_top/sr_driver.sv'.
+Back to file '../test/vending_test_pkg.sv'.
+Parsing included file '../sr_agt_top/sr_monitor.sv'.
+Back to file '../test/vending_test_pkg.sv'.
+Parsing included file '../sr_agt_top/sr_sequencer.sv'.
+Back to file '../test/vending_test_pkg.sv'.
+Parsing included file '../sr_agt_top/sr_agent.sv'.
+Back to file '../test/vending_test_pkg.sv'.
+Parsing included file '../sr_agt_top/sr_seqs.sv'.
+Back to file '../test/vending_test_pkg.sv'.
+Parsing included file '../dn_agt_top/dn_xtn.sv'.
+Back to file '../test/vending_test_pkg.sv'.
+Parsing included file '../dn_agt_top/dn_monitor.sv'.
+Back to file '../test/vending_test_pkg.sv'.
+Parsing included file '../dn_agt_top/dn_agent.sv'.
+Back to file '../test/vending_test_pkg.sv'.
+Parsing included file '../tb/scoreboard.sv'.
+Back to file '../test/vending_test_pkg.sv'.
+Parsing included file '../tb/env.sv'.
+Back to file '../test/vending_test_pkg.sv'.
+Parsing included file '../test/test.sv'.
+Back to file '../test/vending_test_pkg.sv'.
+Parsing design file '../tb/top.sv'
+Top Level Modules:
+       uvm_custom_install_recording
+       uvm_custom_install_verdi_recording
+       top
+TimeScale is 1 ns / 1 ps
+Starting vcs inline pass...
+
+10 modules and 0 UDP read.
+recompiling package vcs_paramclassrepository
+recompiling package _vcs_DPI_package
+recompiling package uvm_pkg
+recompiling package _vcs_msglog
+recompiling module uvm_custom_install_recording
+recompiling module uvm_custom_install_verdi_recording
+recompiling module vending_if
+recompiling module coincol
+recompiling package vending_test_pkg
+recompiling module top
+All of 10 modules done
+make[1]: Entering directory '/home1/BRN40/EMSaji/VLSI_RN/UVM_LABS/vending_machine/sim/csrc' \
+
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+g++ -w  -pipe -DVCS -DUVM_DPI_DO_TYPE_CHECK -fPIC -O -I/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/include \
+-c /home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/dpi/uvm_dpi.cc
+g++ -w  -pipe -DVCS -DUVM_DPI_DO_TYPE_CHECK -fPIC -O -I/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/include \
+-c /home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/dpi/uvm_verdi_dpi.cpp \
+
+if [ -x ../simv ]; then chmod a-x ../simv; fi
+g++  -o ../simv      -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir \
+-Wl,-rpath=/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/linux64/lib -L/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/linux64/lib \
+-Wl,-rpath-link=./  /usr/lib64/libnuma.so.1 uvm_dpi.o uvm_verdi_dpi.o   objs/amcQw_d.o \
+_2225577_archive_1.so  SIM_l.o      rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o \
+rmar_llvm_0_0.o            -lvirsim -lerrorinf -lsnpsmalloc -lvfs /home/cad/eda/SYNOPSYS/VERDI_2022/verdi/T-2022.06-SP1/share/PLI/VCS/LINUX64/pli.a \
+-lvcsnew -lsimprofile -luclinative /home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/linux64/lib/vcs_tls.o \
+-Wl,-whole-archive  -lvcsucli    -Wl,-no-whole-archive       ./../simv.daidir/vc_hdrs.o \
+_vcs_pli_stub_.o   /home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/linux64/lib/vcs_save_restore_new.o \
+/home/cad/eda/SYNOPSYS/VERDI_2022/verdi/T-2022.06-SP1/share/PLI/VCS/LINUX64/pli.a \
+-ldl -lm  -lc -lpthread -ldl 
+../simv up to date
+make[1]: Leaving directory '/home1/BRN40/EMSaji/VLSI_RN/UVM_LABS/vending_machine/sim/csrc' \
+
+CPU time: 10.715 seconds to compile + .292 seconds to elab + .843 seconds to link
+Verdi KDB elaboration done and the database successfully generated: 0 error(s), 0 warning(s)
+Command: /home1/BRN40/EMSaji/VLSI_RN/UVM_LABS/vending_machine/sim/./simv -a vcs.log +fsdbfile+wave1.fsdb -cm_dir ./mem_cov1 +ntb_random_seed_automatic +UVM_TESTNAME=test1
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06-SP1_Full64; Runtime version T-2022.06-SP1_Full64;  Mar 12 10:03 2024
+NOTE: automatic random seed used: 1882558759
+----------------------------------------------------------------
+UVM-1.1d.Synopsys
+(C) 2007-2013 Mentor Graphics Corporation
+(C) 2007-2013 Cadence Design Systems, Inc.
+(C) 2006-2013 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+*Verdi* Loading libsscore_vcs202206.so
+FSDB Dumper for VCS, Release Verdi_T-2022.06-SP1, Linux x86_64/64bit, 08/28/2022
+(C) 1996 - 2022 by Synopsys, Inc.
+*Verdi* : Create FSDB file 'wave1.fsdb'
+*Verdi* : Begin traversing the scope (top), layer (0).
+*Verdi* : End of traversing.
+UVM_INFO @ 0: reporter [RNTST] Running test test1...
+UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+------------------------------------------------------------------
+Name                       Type                        Size  Value
+------------------------------------------------------------------
+uvm_test_top               test1                       -     @462 
+  envh                     env                         -     @476 
+    dagt                   dn_agent                    -     @493 
+      monh                 dn_monitor                  -     @513 
+        monitor_port       uvm_analysis_port           -     @521 
+    sagt                   sr_agent                    -     @485 
+      drvh                 sr_driver                   -     @553 
+        rsp_port           uvm_analysis_port           -     @570 
+        seq_item_port      uvm_seq_item_pull_port      -     @561 
+      monh                 sr_monitor                  -     @536 
+        monitor_port       uvm_analysis_port           -     @544 
+      seqrh                sr_sequencer                -     @579 
+        rsp_export         uvm_analysis_export         -     @587 
+        seq_item_export    uvm_seq_item_pull_imp       -     @693 
+        arbitration_queue  array                       0     -    
+        lock_queue         array                       0     -    
+        num_last_reqs      integral                    32    'd1  
+        num_last_rsps      integral                    32    'd1  
+    sb                     scoreboard                  -     @501 
+      fifo_dth             uvm_tlm_analysis_fifo #(T)  -     @775 
+        analysis_export    uvm_analysis_imp            -     @819 
+        get_ap             uvm_analysis_port           -     @810 
+        get_peek_export    uvm_get_peek_imp            -     @792 
+        put_ap             uvm_analysis_port           -     @801 
+        put_export         uvm_put_imp                 -     @783 
+      fifo_srh             uvm_tlm_analysis_fifo #(T)  -     @722 
+        analysis_export    uvm_analysis_imp            -     @766 
+        get_ap             uvm_analysis_port           -     @757 
+        get_peek_export    uvm_get_peek_imp            -     @739 
+        put_ap             uvm_analysis_port           -     @748 
+        put_export         uvm_put_imp                 -     @730 
+------------------------------------------------------------------
+
+UVM_INFO ../dn_agt_top/dn_monitor.sv(53) @ 50000: uvm_test_top.envh.dagt.monh [Destination Monitor] ------------------------------------
+Name           Type      Size  Value
+------------------------------------
+dmon_xtn       dn_xtn    -     @828 
+  lsb7seg_out  integral  7     64   
+  msb7seg_out  integral  7     64   
+  done_out     integral  1     'd0  
+------------------------------------
+
+UVM_INFO ../sr_agt_top/sr_monitor.sv(52) @ 50000: uvm_test_top.envh.sagt.monh [Source Monitor] --------------------------------
+Name       Type      Size  Value
+--------------------------------
+smon_xtn   sr_xtn    -     @832 
+  coin_in  integral  2     'd0  
+  reset    integral  1     1    
+--------------------------------
+
+UVM_INFO ../sr_agt_top/sr_driver.sv(52) @ 50000: uvm_test_top.envh.sagt.drvh [Source Driver] -----------------------------------------------------------------------------------
+Name                           Type      Size  Value                               
+-----------------------------------------------------------------------------------
+req                            sr_xtn    -     @843                                
+  begin_time                   time      64    0                                   
+  depth                        int       32    'd2                                 
+  parent sequence (name)       string    7     sr_seq1                             
+  parent sequence (full name)  string    36    uvm_test_top.envh.sagt.seqrh.sr_seq1
+  sequencer                    string    28    uvm_test_top.envh.sagt.seqrh        
+  coin_in                      integral  2     'd0                                 
+  reset                        integral  1     1                                   
+-----------------------------------------------------------------------------------
+
+UVM_INFO ../tb/scoreboard.sv(55) @ 50000: uvm_test_top.envh.sb [scoreboard] SCOREBOARD SOURCE TRANSACTION --------------------------------
+Name       Type      Size  Value
+--------------------------------
+smon_xtn   sr_xtn    -     @832 
+  coin_in  integral  2     'd0  
+  reset    integral  1     1    
+--------------------------------
+
+UVM_INFO ../tb/scoreboard.sv(59) @ 50000: uvm_test_top.envh.sb [scoreboard] SCOREBOARD DESTINATION TRANSACTION ------------------------------------
+Name           Type      Size  Value
+------------------------------------
+dmon_xtn       dn_xtn    -     @828 
+  lsb7seg_out  integral  7     64   
+  msb7seg_out  integral  7     64   
+  done_out     integral  1     'd0  
+------------------------------------
+
+UVM_INFO ../tb/scoreboard.sv(62) @ 50000: uvm_test_top.envh.sb [scoreboard] Expected output in sb --------------------------------------
+Name             Type      Size  Value
+--------------------------------------
+expected_output  dn_xtn    -     @718 
+  lsb7seg_out    integral  7     64   
+  msb7seg_out    integral  7     64   
+  done_out       integral  1     'd0  
+--------------------------------------
+
+UVM_INFO ../tb/scoreboard.sv(141) @ 50000: uvm_test_top.envh.sb [scoreboard] COMPARISON SUCCESS
+UVM_INFO ../tb/scoreboard.sv(145) @ 50000: uvm_test_top.envh.sb [scoreboard] COMPARISON SUCCESS
+UVM_INFO ../tb/scoreboard.sv(150) @ 50000: uvm_test_top.envh.sb [scoreboard] COMPARISON SUCCESS
+UVM_INFO ../dn_agt_top/dn_monitor.sv(53) @ 110000: uvm_test_top.envh.dagt.monh [Destination Monitor] ------------------------------------
+Name           Type      Size  Value
+------------------------------------
+dmon_xtn       dn_xtn    -     @871 
+  lsb7seg_out  integral  7     'd34 
+  msb7seg_out  integral  7     64   
+  done_out     integral  1     'd0  
+------------------------------------
+
+UVM_INFO ../sr_agt_top/sr_monitor.sv(52) @ 110000: uvm_test_top.envh.sagt.monh [Source Monitor] --------------------------------
+Name       Type      Size  Value
+--------------------------------
+smon_xtn   sr_xtn    -     @875 
+  coin_in  integral  2     'd1  
+  reset    integral  1     'd0  
+--------------------------------
+
+UVM_INFO ../sr_agt_top/sr_driver.sv(52) @ 110000: uvm_test_top.envh.sagt.drvh [Source Driver] -----------------------------------------------------------------------------------
+Name                           Type      Size  Value                               
+-----------------------------------------------------------------------------------
+req                            sr_xtn    -     @880                                
+  begin_time                   time      64    50000                               
+  depth                        int       32    'd2                                 
+  parent sequence (name)       string    7     sr_seq1                             
+  parent sequence (full name)  string    36    uvm_test_top.envh.sagt.seqrh.sr_seq1
+  sequencer                    string    28    uvm_test_top.envh.sagt.seqrh        
+  coin_in                      integral  2     'd1                                 
+  reset                        integral  1     'd0                                 
+-----------------------------------------------------------------------------------
+
+UVM_INFO ../tb/scoreboard.sv(55) @ 110000: uvm_test_top.envh.sb [scoreboard] SCOREBOARD SOURCE TRANSACTION --------------------------------
+Name       Type      Size  Value
+--------------------------------
+smon_xtn   sr_xtn    -     @875 
+  coin_in  integral  2     'd1  
+  reset    integral  1     'd0  
+--------------------------------
+
+UVM_INFO ../tb/scoreboard.sv(59) @ 110000: uvm_test_top.envh.sb [scoreboard] SCOREBOARD DESTINATION TRANSACTION ------------------------------------
+Name           Type      Size  Value
+------------------------------------
+dmon_xtn       dn_xtn    -     @871 
+  lsb7seg_out  integral  7     'd34 
+  msb7seg_out  integral  7     64   
+  done_out     integral  1     'd0  
+------------------------------------
+
+UVM_INFO ../tb/scoreboard.sv(62) @ 110000: uvm_test_top.envh.sb [scoreboard] Expected output in sb --------------------------------------
+Name             Type      Size  Value
+--------------------------------------
+expected_output  dn_xtn    -     @718 
+  lsb7seg_out    integral  7     'd34 
+  msb7seg_out    integral  7     64   
+  done_out       integral  1     'd0  
+--------------------------------------
+
+UVM_INFO ../tb/scoreboard.sv(141) @ 110000: uvm_test_top.envh.sb [scoreboard] COMPARISON SUCCESS
+UVM_INFO ../tb/scoreboard.sv(145) @ 110000: uvm_test_top.envh.sb [scoreboard] COMPARISON SUCCESS
+UVM_INFO ../tb/scoreboard.sv(150) @ 110000: uvm_test_top.envh.sb [scoreboard] COMPARISON SUCCESS
+UVM_INFO ../dn_agt_top/dn_monitor.sv(53) @ 170000: uvm_test_top.envh.dagt.monh [Destination Monitor] ------------------------------------
+Name           Type      Size  Value
+------------------------------------
+dmon_xtn       dn_xtn    -     @884 
+  lsb7seg_out  integral  7     'd9  
+  msb7seg_out  integral  7     'd8  
+  done_out     integral  1     1    
+------------------------------------
+
+UVM_INFO ../sr_agt_top/sr_monitor.sv(52) @ 170000: uvm_test_top.envh.sagt.monh [Source Monitor] --------------------------------
+Name       Type      Size  Value
+--------------------------------
+smon_xtn   sr_xtn    -     @888 
+  coin_in  integral  2     2    
+  reset    integral  1     'd0  
+--------------------------------
+
+UVM_INFO ../sr_agt_top/sr_driver.sv(52) @ 170000: uvm_test_top.envh.sagt.drvh [Source Driver] -----------------------------------------------------------------------------------
+Name                           Type      Size  Value                               
+-----------------------------------------------------------------------------------
+req                            sr_xtn    -     @892                                
+  begin_time                   time      64    110000                              
+  depth                        int       32    'd2                                 
+  parent sequence (name)       string    7     sr_seq1                             
+  parent sequence (full name)  string    36    uvm_test_top.envh.sagt.seqrh.sr_seq1
+  sequencer                    string    28    uvm_test_top.envh.sagt.seqrh        
+  coin_in                      integral  2     2                                   
+  reset                        integral  1     'd0                                 
+-----------------------------------------------------------------------------------
+
+UVM_INFO ../tb/scoreboard.sv(55) @ 170000: uvm_test_top.envh.sb [scoreboard] SCOREBOARD SOURCE TRANSACTION --------------------------------
+Name       Type      Size  Value
+--------------------------------
+smon_xtn   sr_xtn    -     @888 
+  coin_in  integral  2     2    
+  reset    integral  1     'd0  
+--------------------------------
+
+UVM_INFO ../tb/scoreboard.sv(59) @ 170000: uvm_test_top.envh.sb [scoreboard] SCOREBOARD DESTINATION TRANSACTION ------------------------------------
+Name           Type      Size  Value
+------------------------------------
+dmon_xtn       dn_xtn    -     @884 
+  lsb7seg_out  integral  7     'd9  
+  msb7seg_out  integral  7     'd8  
+  done_out     integral  1     1    
+------------------------------------
+
+UVM_INFO ../tb/scoreboard.sv(62) @ 170000: uvm_test_top.envh.sb [scoreboard] Expected output in sb --------------------------------------
+Name             Type      Size  Value
+--------------------------------------
+expected_output  dn_xtn    -     @718 
+  lsb7seg_out    integral  7     'd9  
+  msb7seg_out    integral  7     'd8  
+  done_out       integral  1     1    
+--------------------------------------
+
+UVM_INFO ../tb/scoreboard.sv(141) @ 170000: uvm_test_top.envh.sb [scoreboard] COMPARISON SUCCESS
+UVM_INFO ../tb/scoreboard.sv(145) @ 170000: uvm_test_top.envh.sb [scoreboard] COMPARISON SUCCESS
+UVM_INFO ../tb/scoreboard.sv(150) @ 170000: uvm_test_top.envh.sb [scoreboard] COMPARISON SUCCESS
+UVM_INFO ../dn_agt_top/dn_monitor.sv(53) @ 230000: uvm_test_top.envh.dagt.monh [Destination Monitor] ------------------------------------
+Name           Type      Size  Value
+------------------------------------
+dmon_xtn       dn_xtn    -     @896 
+  lsb7seg_out  integral  7     64   
+  msb7seg_out  integral  7     64   
+  done_out     integral  1     'd0  
+------------------------------------
+
+UVM_INFO ../sr_agt_top/sr_monitor.sv(52) @ 230000: uvm_test_top.envh.sagt.monh [Source Monitor] --------------------------------
+Name       Type      Size  Value
+--------------------------------
+smon_xtn   sr_xtn    -     @900 
+  coin_in  integral  2     3    
+  reset    integral  1     'd0  
+--------------------------------
+
+UVM_INFO ../sr_agt_top/sr_driver.sv(52) @ 230000: uvm_test_top.envh.sagt.drvh [Source Driver] -----------------------------------------------------------------------------------
+Name                           Type      Size  Value                               
+-----------------------------------------------------------------------------------
+req                            sr_xtn    -     @904                                
+  begin_time                   time      64    170000                              
+  depth                        int       32    'd2                                 
+  parent sequence (name)       string    7     sr_seq1                             
+  parent sequence (full name)  string    36    uvm_test_top.envh.sagt.seqrh.sr_seq1
+  sequencer                    string    28    uvm_test_top.envh.sagt.seqrh        
+  coin_in                      integral  2     3                                   
+  reset                        integral  1     'd0                                 
+-----------------------------------------------------------------------------------
+
+UVM_INFO ../tb/scoreboard.sv(55) @ 230000: uvm_test_top.envh.sb [scoreboard] SCOREBOARD SOURCE TRANSACTION --------------------------------
+Name       Type      Size  Value
+--------------------------------
+smon_xtn   sr_xtn    -     @900 
+  coin_in  integral  2     3    
+  reset    integral  1     'd0  
+--------------------------------
+
+UVM_INFO ../tb/scoreboard.sv(59) @ 230000: uvm_test_top.envh.sb [scoreboard] SCOREBOARD DESTINATION TRANSACTION ------------------------------------
+Name           Type      Size  Value
+------------------------------------
+dmon_xtn       dn_xtn    -     @896 
+  lsb7seg_out  integral  7     64   
+  msb7seg_out  integral  7     64   
+  done_out     integral  1     'd0  
+------------------------------------
+
+UVM_INFO ../tb/scoreboard.sv(62) @ 230000: uvm_test_top.envh.sb [scoreboard] Expected output in sb --------------------------------------
+Name             Type      Size  Value
+--------------------------------------
+expected_output  dn_xtn    -     @718 
+  lsb7seg_out    integral  7     64   
+  msb7seg_out    integral  7     64   
+  done_out       integral  1     'd0  
+--------------------------------------
+
+UVM_INFO ../tb/scoreboard.sv(141) @ 230000: uvm_test_top.envh.sb [scoreboard] COMPARISON SUCCESS
+UVM_INFO ../tb/scoreboard.sv(145) @ 230000: uvm_test_top.envh.sb [scoreboard] COMPARISON SUCCESS
+UVM_INFO ../tb/scoreboard.sv(150) @ 230000: uvm_test_top.envh.sb [scoreboard] COMPARISON SUCCESS
+UVM_INFO ../dn_agt_top/dn_monitor.sv(53) @ 290000: uvm_test_top.envh.dagt.monh [Destination Monitor] ------------------------------------
+Name           Type      Size  Value
+------------------------------------
+dmon_xtn       dn_xtn    -     @908 
+  lsb7seg_out  integral  7     'd36 
+  msb7seg_out  integral  7     'd20 
+  done_out     integral  1     'd0  
+------------------------------------
+
+UVM_INFO ../sr_agt_top/sr_monitor.sv(52) @ 290000: uvm_test_top.envh.sagt.monh [Source Monitor] --------------------------------
+Name       Type      Size  Value
+--------------------------------
+smon_xtn   sr_xtn    -     @912 
+  coin_in  integral  2     'd0  
+  reset    integral  1     'd0  
+--------------------------------
+
+UVM_INFO ../sr_agt_top/sr_driver.sv(52) @ 290000: uvm_test_top.envh.sagt.drvh [Source Driver] -----------------------------------------------------------------------------------
+Name                           Type      Size  Value                               
+-----------------------------------------------------------------------------------
+req                            sr_xtn    -     @916                                
+  begin_time                   time      64    230000                              
+  depth                        int       32    'd2                                 
+  parent sequence (name)       string    7     sr_seq1                             
+  parent sequence (full name)  string    36    uvm_test_top.envh.sagt.seqrh.sr_seq1
+  sequencer                    string    28    uvm_test_top.envh.sagt.seqrh        
+  coin_in                      integral  2     'd0                                 
+  reset                        integral  1     'd0                                 
+-----------------------------------------------------------------------------------
+
+UVM_INFO ../tb/scoreboard.sv(55) @ 290000: uvm_test_top.envh.sb [scoreboard] SCOREBOARD SOURCE TRANSACTION --------------------------------
+Name       Type      Size  Value
+--------------------------------
+smon_xtn   sr_xtn    -     @912 
+  coin_in  integral  2     'd0  
+  reset    integral  1     'd0  
+--------------------------------
+
+UVM_INFO ../tb/scoreboard.sv(59) @ 290000: uvm_test_top.envh.sb [scoreboard] SCOREBOARD DESTINATION TRANSACTION ------------------------------------
+Name           Type      Size  Value
+------------------------------------
+dmon_xtn       dn_xtn    -     @908 
+  lsb7seg_out  integral  7     'd36 
+  msb7seg_out  integral  7     'd20 
+  done_out     integral  1     'd0  
+------------------------------------
+
+UVM_INFO ../tb/scoreboard.sv(62) @ 290000: uvm_test_top.envh.sb [scoreboard] Expected output in sb --------------------------------------
+Name             Type      Size  Value
+--------------------------------------
+expected_output  dn_xtn    -     @718 
+  lsb7seg_out    integral  7     'd36 
+  msb7seg_out    integral  7     'd20 
+  done_out       integral  1     'd0  
+--------------------------------------
+
+UVM_INFO ../tb/scoreboard.sv(141) @ 290000: uvm_test_top.envh.sb [scoreboard] COMPARISON SUCCESS
+UVM_INFO ../tb/scoreboard.sv(145) @ 290000: uvm_test_top.envh.sb [scoreboard] COMPARISON SUCCESS
+UVM_INFO ../tb/scoreboard.sv(150) @ 290000: uvm_test_top.envh.sb [scoreboard] COMPARISON SUCCESS
+UVM_INFO ../dn_agt_top/dn_monitor.sv(53) @ 350000: uvm_test_top.envh.dagt.monh [Destination Monitor] ------------------------------------
+Name           Type      Size  Value
+------------------------------------
+dmon_xtn       dn_xtn    -     @920 
+  lsb7seg_out  integral  7     'd9  
+  msb7seg_out  integral  7     'd8  
+  done_out     integral  1     1    
+------------------------------------
+
+UVM_INFO ../sr_agt_top/sr_monitor.sv(52) @ 350000: uvm_test_top.envh.sagt.monh [Source Monitor] --------------------------------
+Name       Type      Size  Value
+--------------------------------
+smon_xtn   sr_xtn    -     @924 
+  coin_in  integral  2     'd1  
+  reset    integral  1     'd0  
+--------------------------------
+
+UVM_INFO ../sr_agt_top/sr_driver.sv(52) @ 350000: uvm_test_top.envh.sagt.drvh [Source Driver] -----------------------------------------------------------------------------------
+Name                           Type      Size  Value                               
+-----------------------------------------------------------------------------------
+req                            sr_xtn    -     @928                                
+  begin_time                   time      64    290000                              
+  depth                        int       32    'd2                                 
+  parent sequence (name)       string    7     sr_seq1                             
+  parent sequence (full name)  string    36    uvm_test_top.envh.sagt.seqrh.sr_seq1
+  sequencer                    string    28    uvm_test_top.envh.sagt.seqrh        
+  coin_in                      integral  2     'd1                                 
+  reset                        integral  1     'd0                                 
+-----------------------------------------------------------------------------------
+
+UVM_INFO ../tb/scoreboard.sv(55) @ 350000: uvm_test_top.envh.sb [scoreboard] SCOREBOARD SOURCE TRANSACTION --------------------------------
+Name       Type      Size  Value
+--------------------------------
+smon_xtn   sr_xtn    -     @924 
+  coin_in  integral  2     'd1  
+  reset    integral  1     'd0  
+--------------------------------
+
+UVM_INFO ../tb/scoreboard.sv(59) @ 350000: uvm_test_top.envh.sb [scoreboard] SCOREBOARD DESTINATION TRANSACTION ------------------------------------
+Name           Type      Size  Value
+------------------------------------
+dmon_xtn       dn_xtn    -     @920 
+  lsb7seg_out  integral  7     'd9  
+  msb7seg_out  integral  7     'd8  
+  done_out     integral  1     1    
+------------------------------------
+
+UVM_INFO ../tb/scoreboard.sv(62) @ 350000: uvm_test_top.envh.sb [scoreboard] Expected output in sb --------------------------------------
+Name             Type      Size  Value
+--------------------------------------
+expected_output  dn_xtn    -     @718 
+  lsb7seg_out    integral  7     'd34 
+  msb7seg_out    integral  7     64   
+  done_out       integral  1     'd0  
+--------------------------------------
+
+UVM_INFO ../tb/scoreboard.sv(143) @ 350000: uvm_test_top.envh.sb [scoreboard] COMPARISON FAIL
+UVM_INFO ../tb/scoreboard.sv(147) @ 350000: uvm_test_top.envh.sb [scoreboard] COMPARISON FAIL
+UVM_INFO ../tb/scoreboard.sv(152) @ 350000: uvm_test_top.envh.sb [scoreboard] COMPARISON FAIL
+UVM_INFO ../dn_agt_top/dn_monitor.sv(53) @ 410000: uvm_test_top.envh.dagt.monh [Destination Monitor] ------------------------------------
+Name           Type      Size  Value
+------------------------------------
+dmon_xtn       dn_xtn    -     @932 
+  lsb7seg_out  integral  7     'd9  
+  msb7seg_out  integral  7     'd8  
+  done_out     integral  1     1    
+------------------------------------
+
+UVM_INFO ../sr_agt_top/sr_monitor.sv(52) @ 410000: uvm_test_top.envh.sagt.monh [Source Monitor] --------------------------------
+Name       Type      Size  Value
+--------------------------------
+smon_xtn   sr_xtn    -     @936 
+  coin_in  integral  2     2    
+  reset    integral  1     'd0  
+--------------------------------
+
+UVM_INFO ../sr_agt_top/sr_driver.sv(52) @ 410000: uvm_test_top.envh.sagt.drvh [Source Driver] -----------------------------------------------------------------------------------
+Name                           Type      Size  Value                               
+-----------------------------------------------------------------------------------
+req                            sr_xtn    -     @940                                
+  begin_time                   time      64    350000                              
+  depth                        int       32    'd2                                 
+  parent sequence (name)       string    7     sr_seq1                             
+  parent sequence (full name)  string    36    uvm_test_top.envh.sagt.seqrh.sr_seq1
+  sequencer                    string    28    uvm_test_top.envh.sagt.seqrh        
+  coin_in                      integral  2     2                                   
+  reset                        integral  1     'd0                                 
+-----------------------------------------------------------------------------------
+
+UVM_INFO ../tb/scoreboard.sv(55) @ 410000: uvm_test_top.envh.sb [scoreboard] SCOREBOARD SOURCE TRANSACTION --------------------------------
+Name       Type      Size  Value
+--------------------------------
+smon_xtn   sr_xtn    -     @936 
+  coin_in  integral  2     2    
+  reset    integral  1     'd0  
+--------------------------------
+
+UVM_INFO ../tb/scoreboard.sv(59) @ 410000: uvm_test_top.envh.sb [scoreboard] SCOREBOARD DESTINATION TRANSACTION ------------------------------------
+Name           Type      Size  Value
+------------------------------------
+dmon_xtn       dn_xtn    -     @932 
+  lsb7seg_out  integral  7     'd9  
+  msb7seg_out  integral  7     'd8  
+  done_out     integral  1     1    
+------------------------------------
+
+UVM_INFO ../tb/scoreboard.sv(62) @ 410000: uvm_test_top.envh.sb [scoreboard] Expected output in sb --------------------------------------
+Name             Type      Size  Value
+--------------------------------------
+expected_output  dn_xtn    -     @718 
+  lsb7seg_out    integral  7     'd9  
+  msb7seg_out    integral  7     'd8  
+  done_out       integral  1     1    
+--------------------------------------
+
+UVM_INFO ../tb/scoreboard.sv(141) @ 410000: uvm_test_top.envh.sb [scoreboard] COMPARISON SUCCESS
+UVM_INFO ../tb/scoreboard.sv(145) @ 410000: uvm_test_top.envh.sb [scoreboard] COMPARISON SUCCESS
+UVM_INFO ../tb/scoreboard.sv(150) @ 410000: uvm_test_top.envh.sb [scoreboard] COMPARISON SUCCESS
+UVM_INFO ../dn_agt_top/dn_monitor.sv(53) @ 470000: uvm_test_top.envh.dagt.monh [Destination Monitor] ------------------------------------
+Name           Type      Size  Value
+------------------------------------
+dmon_xtn       dn_xtn    -     @944 
+  lsb7seg_out  integral  7     64   
+  msb7seg_out  integral  7     64   
+  done_out     integral  1     'd0  
+------------------------------------
+
+UVM_INFO ../sr_agt_top/sr_monitor.sv(52) @ 470000: uvm_test_top.envh.sagt.monh [Source Monitor] --------------------------------
+Name       Type      Size  Value
+--------------------------------
+smon_xtn   sr_xtn    -     @948 
+  coin_in  integral  2     3    
+  reset    integral  1     1    
+--------------------------------
+
+UVM_INFO ../sr_agt_top/sr_driver.sv(52) @ 470000: uvm_test_top.envh.sagt.drvh [Source Driver] -----------------------------------------------------------------------------------
+Name                           Type      Size  Value                               
+-----------------------------------------------------------------------------------
+req                            sr_xtn    -     @952                                
+  begin_time                   time      64    410000                              
+  depth                        int       32    'd2                                 
+  parent sequence (name)       string    7     sr_seq1                             
+  parent sequence (full name)  string    36    uvm_test_top.envh.sagt.seqrh.sr_seq1
+  sequencer                    string    28    uvm_test_top.envh.sagt.seqrh        
+  coin_in                      integral  2     3                                   
+  reset                        integral  1     1                                   
+-----------------------------------------------------------------------------------
+
+UVM_INFO ../tb/scoreboard.sv(55) @ 470000: uvm_test_top.envh.sb [scoreboard] SCOREBOARD SOURCE TRANSACTION --------------------------------
+Name       Type      Size  Value
+--------------------------------
+smon_xtn   sr_xtn    -     @948 
+  coin_in  integral  2     3    
+  reset    integral  1     1    
+--------------------------------
+
+UVM_INFO ../tb/scoreboard.sv(59) @ 470000: uvm_test_top.envh.sb [scoreboard] SCOREBOARD DESTINATION TRANSACTION ------------------------------------
+Name           Type      Size  Value
+------------------------------------
+dmon_xtn       dn_xtn    -     @944 
+  lsb7seg_out  integral  7     64   
+  msb7seg_out  integral  7     64   
+  done_out     integral  1     'd0  
+------------------------------------
+
+UVM_INFO ../tb/scoreboard.sv(62) @ 470000: uvm_test_top.envh.sb [scoreboard] Expected output in sb --------------------------------------
+Name             Type      Size  Value
+--------------------------------------
+expected_output  dn_xtn    -     @718 
+  lsb7seg_out    integral  7     64   
+  msb7seg_out    integral  7     64   
+  done_out       integral  1     'd0  
+--------------------------------------
+
+UVM_INFO ../tb/scoreboard.sv(141) @ 470000: uvm_test_top.envh.sb [scoreboard] COMPARISON SUCCESS
+UVM_INFO ../tb/scoreboard.sv(145) @ 470000: uvm_test_top.envh.sb [scoreboard] COMPARISON SUCCESS
+UVM_INFO ../tb/scoreboard.sv(150) @ 470000: uvm_test_top.envh.sb [scoreboard] COMPARISON SUCCESS
+UVM_INFO ../dn_agt_top/dn_monitor.sv(53) @ 530000: uvm_test_top.envh.dagt.monh [Destination Monitor] ------------------------------------
+Name           Type      Size  Value
+------------------------------------
+dmon_xtn       dn_xtn    -     @956 
+  lsb7seg_out  integral  7     'd36 
+  msb7seg_out  integral  7     'd20 
+  done_out     integral  1     'd0  
+------------------------------------
+
+UVM_INFO ../sr_agt_top/sr_monitor.sv(52) @ 530000: uvm_test_top.envh.sagt.monh [Source Monitor] --------------------------------
+Name       Type      Size  Value
+--------------------------------
+smon_xtn   sr_xtn    -     @960 
+  coin_in  integral  2     'd0  
+  reset    integral  1     'd0  
+--------------------------------
+
+UVM_INFO ../sr_agt_top/sr_driver.sv(52) @ 530000: uvm_test_top.envh.sagt.drvh [Source Driver] -----------------------------------------------------------------------------------
+Name                           Type      Size  Value                               
+-----------------------------------------------------------------------------------
+req                            sr_xtn    -     @964                                
+  begin_time                   time      64    470000                              
+  depth                        int       32    'd2                                 
+  parent sequence (name)       string    7     sr_seq1                             
+  parent sequence (full name)  string    36    uvm_test_top.envh.sagt.seqrh.sr_seq1
+  sequencer                    string    28    uvm_test_top.envh.sagt.seqrh        
+  coin_in                      integral  2     'd0                                 
+  reset                        integral  1     'd0                                 
+-----------------------------------------------------------------------------------
+
+UVM_INFO ../tb/scoreboard.sv(55) @ 530000: uvm_test_top.envh.sb [scoreboard] SCOREBOARD SOURCE TRANSACTION --------------------------------
+Name       Type      Size  Value
+--------------------------------
+smon_xtn   sr_xtn    -     @960 
+  coin_in  integral  2     'd0  
+  reset    integral  1     'd0  
+--------------------------------
+
+UVM_INFO ../tb/scoreboard.sv(59) @ 530000: uvm_test_top.envh.sb [scoreboard] SCOREBOARD DESTINATION TRANSACTION ------------------------------------
+Name           Type      Size  Value
+------------------------------------
+dmon_xtn       dn_xtn    -     @956 
+  lsb7seg_out  integral  7     'd36 
+  msb7seg_out  integral  7     'd20 
+  done_out     integral  1     'd0  
+------------------------------------
+
+UVM_INFO ../tb/scoreboard.sv(62) @ 530000: uvm_test_top.envh.sb [scoreboard] Expected output in sb --------------------------------------
+Name             Type      Size  Value
+--------------------------------------
+expected_output  dn_xtn    -     @718 
+  lsb7seg_out    integral  7     'd36 
+  msb7seg_out    integral  7     'd20 
+  done_out       integral  1     'd0  
+--------------------------------------
+
+UVM_INFO ../tb/scoreboard.sv(141) @ 530000: uvm_test_top.envh.sb [scoreboard] COMPARISON SUCCESS
+UVM_INFO ../tb/scoreboard.sv(145) @ 530000: uvm_test_top.envh.sb [scoreboard] COMPARISON SUCCESS
+UVM_INFO ../tb/scoreboard.sv(150) @ 530000: uvm_test_top.envh.sb [scoreboard] COMPARISON SUCCESS
+UVM_INFO ../dn_agt_top/dn_monitor.sv(53) @ 590000: uvm_test_top.envh.dagt.monh [Destination Monitor] ------------------------------------
+Name           Type      Size  Value
+------------------------------------
+dmon_xtn       dn_xtn    -     @968 
+  lsb7seg_out  integral  7     'd9  
+  msb7seg_out  integral  7     'd8  
+  done_out     integral  1     1    
+------------------------------------
+
+UVM_INFO ../sr_agt_top/sr_monitor.sv(52) @ 590000: uvm_test_top.envh.sagt.monh [Source Monitor] --------------------------------
+Name       Type      Size  Value
+--------------------------------
+smon_xtn   sr_xtn    -     @972 
+  coin_in  integral  2     'd1  
+  reset    integral  1     'd0  
+--------------------------------
+
+UVM_INFO ../sr_agt_top/sr_driver.sv(52) @ 590000: uvm_test_top.envh.sagt.drvh [Source Driver] -----------------------------------------------------------------------------------
+Name                           Type      Size  Value                               
+-----------------------------------------------------------------------------------
+req                            sr_xtn    -     @976                                
+  begin_time                   time      64    530000                              
+  depth                        int       32    'd2                                 
+  parent sequence (name)       string    7     sr_seq1                             
+  parent sequence (full name)  string    36    uvm_test_top.envh.sagt.seqrh.sr_seq1
+  sequencer                    string    28    uvm_test_top.envh.sagt.seqrh        
+  coin_in                      integral  2     'd1                                 
+  reset                        integral  1     'd0                                 
+-----------------------------------------------------------------------------------
+
+UVM_INFO ../tb/scoreboard.sv(55) @ 590000: uvm_test_top.envh.sb [scoreboard] SCOREBOARD SOURCE TRANSACTION --------------------------------
+Name       Type      Size  Value
+--------------------------------
+smon_xtn   sr_xtn    -     @972 
+  coin_in  integral  2     'd1  
+  reset    integral  1     'd0  
+--------------------------------
+
+UVM_INFO ../tb/scoreboard.sv(59) @ 590000: uvm_test_top.envh.sb [scoreboard] SCOREBOARD DESTINATION TRANSACTION ------------------------------------
+Name           Type      Size  Value
+------------------------------------
+dmon_xtn       dn_xtn    -     @968 
+  lsb7seg_out  integral  7     'd9  
+  msb7seg_out  integral  7     'd8  
+  done_out     integral  1     1    
+------------------------------------
+
+UVM_INFO ../tb/scoreboard.sv(62) @ 590000: uvm_test_top.envh.sb [scoreboard] Expected output in sb --------------------------------------
+Name             Type      Size  Value
+--------------------------------------
+expected_output  dn_xtn    -     @718 
+  lsb7seg_out    integral  7     'd34 
+  msb7seg_out    integral  7     64   
+  done_out       integral  1     'd0  
+--------------------------------------
+
+UVM_INFO ../tb/scoreboard.sv(143) @ 590000: uvm_test_top.envh.sb [scoreboard] COMPARISON FAIL
+UVM_INFO ../tb/scoreboard.sv(147) @ 590000: uvm_test_top.envh.sb [scoreboard] COMPARISON FAIL
+UVM_INFO ../tb/scoreboard.sv(152) @ 590000: uvm_test_top.envh.sb [scoreboard] COMPARISON FAIL
+UVM_INFO /home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_objection.svh(1274) @ 620000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO ../dn_agt_top/dn_monitor.sv(59) @ 620000: uvm_test_top.envh.dagt.monh [Destination Monitor Transaction Count] 10
+UVM_INFO ../sr_agt_top/sr_driver.sv(56) @ 620000: uvm_test_top.envh.sagt.drvh [Source Driver Transaction Count] 10
+UVM_INFO ../sr_agt_top/sr_monitor.sv(56) @ 620000: uvm_test_top.envh.sagt.monh [Source Monitor Transaction Count] 10
+
+....................SCOREBOARD REPORT..............................
+
+SOURCE MONITOR TRANSACTION IN SB: 10 
+
+DESTINATION MONITOR TRANSACTION IN SB: 10 
+
+NO OF TRANSACTIONS COMPARED IN SB: 10 
+
+
+...................................................................
+
+
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :   96
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[Destination Monitor]    10
+[Destination Monitor Transaction Count]     1
+[RNTST]     1
+[Source Driver]    10
+[Source Driver Transaction Count]     1
+[Source Monitor]    10
+[Source Monitor Transaction Count]     1
+[TEST_DONE]     1
+[UVMTOP]     1
+[scoreboard]    60
+$finish called from file "/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_root.svh", line 437.
+$finish at simulation time               620000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 620000 ps
+CPU Time:      0.350 seconds;       Data structure size:   0.6Mb
+Tue Mar 12 10:03:05 2024

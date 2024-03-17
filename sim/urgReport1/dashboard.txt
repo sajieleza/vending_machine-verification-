@@ -1,0 +1,21 @@
+Dashboard
+
+Date: Tue Mar 12 10:03:06 2024
+
+User: EMSaji
+
+Version: T-2022.06-SP1
+Command line: urg -dir mem_cov1.vdb -format both -report urgReport1
+Number of tests: 1
+
+-------------------------------------------------------------------------------
+Total Coverage Summary 
+SCORE  GROUP  
+ 88.89  88.89 
+
+
+-------------------------------------------------------------------------------
+Total Groups Coverage Summary 
+SCORE  INST SCORE WEIGHT 
+ 88.89  88.89     1      
+

@@ -1,0 +1,26 @@
+<session version="1.1" release="T-2022.06-SP1" timestp="2024-03-12 04:33:05 GMT">
+  <info>
+    <attr name="datetime" value="Tue Mar 12 10:03:06 2024
+"/>
+    <attr name="command" value="urg -dir mem_cov1.vdb -format both -report urgReport1"/>
+  </info>
+  <hvp>
+    <datadef>
+      <metdef name="Group" type="percent" aggregator="average" builtin="1" />
+    </datadef>
+  </hvp>
+  <old_coverage>
+  <scope type="top" name="top">
+    <metric name="Group" value="88.8889%" />
+  </scope>
+  <scope type="instance" name="top">
+  </scope>
+  <scope type="group" name="top">
+    <scope type="group" name="vending_test_pkg::scoreboard::fcov1">
+      <metric name="Group" value="88.8889%" />
+    </scope>
+  </scope>
+  <scope type="assert" name="Statistics">
+  </scope>
+  </old_coverage>
+</session>
